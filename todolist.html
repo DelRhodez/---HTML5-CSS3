@@ -42,7 +42,7 @@
         .todo button:hover{
             font-weight: bold;
         }
-        .complete::before {
+        .todo li.complete::before {
             content: '';
             display: inline-block;
             width: 15px;
@@ -51,7 +51,16 @@
             background-repeat: no-repeat;
             margin-right: 6px;            
         }
-        
+        .todo li::before{
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url("square.svg");
+            background-repeat: no-repeat;
+            margin-right: 6px;      
+        }
+
 
     </style>
 </head>
